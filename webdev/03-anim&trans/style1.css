@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: darkkhaki;
+    border: 10px solid rgb(32, 230, 51);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+#container{
+    height: 50%;
+    width: 100%;
+    background-color: green;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.box{
+    height: 25%;
+    width: 25vh;
+    border: 3px solid white;
+    border-radius: 100px;
+    background-color: orangered;
+    box-sizing: border-box;
+}
+#box1{
+    transition: width 3s 0s ease;
+}
+#box1:hover{
+    width: 100%;
+}
+#box2{
+    transition:all 1s 0s linear;
+}
+#box2:hover{
+    width: 50%;
+    border: 1-px dotted black;
+}
+#box3{
+    transition: all 2s 0s ease-in-out;
+}
+#box3:hover{
+    margin-left: 50%;
+    height: 40%;
+    width: 40%;
+    background-color: aqua;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+}
+#box4{
+    transition: all 3s 0s ease;
+}
+#box4:hover{
+    background-color: rgb(225, 255, 2);
+    border: 10px dashed rgb(255, 255, 255);
+}
+
+

@@ -1,0 +1,43 @@
+body{
+    height: 4000px;
+}
+#wrapper{
+    height: 50vh;
+    width: 80vw;
+    border: 2px solid green;
+}
+#i1{
+    /* margin-top: 100px; */
+    margin-top: 400px;
+    position: absolute;
+    height: 25rem;
+    width: 13rem;
+}
+
+#i2{
+    position:static;
+    height: 50vh;
+    width: 17vw;
+}
+#i3{
+    margin-top:80vh;
+    margin-left:70vw;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+}
+#i4{
+    position: relative;
+    height: 25rem;
+    width: 13rem;
+}
+#i5{
+    position: static;
+    height: 80%;
+    width: 25%;
+}
+#i6{
+    position: sticky;
+    height: 25rem;
+    width: 10%;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit">
+        <fieldset>
+            <legend>Fill the form</legend>
+        <label for="name">Enter name : </label>
+        <input type="name" id="name">
+        <br/>
+        <br/>
+        <label for="password">Enter password : </label>
+        <input type="password" name="password" id="password">
+        <br/>
+        <br/>
+        <label for="email">Enter email : </label>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        <br>
+        <br>
+        <!-- <label for="male">Male</label> -->
+        <input type="radio" name="gender" id="male">Male
+        <!-- <label for="male">Female</label> -->
+        <input type="radio" name="gender" id="female">Female
+        <!-- <label for="male">Transgender</label> -->
+        <input type="radio" name="gender" id="transgender">Transgender
+
+        <br>
+        <br>
+        <fieldset>
+            <legend>Extra</legend>
+            <input type="checkbox" name="lassi" id="lassi">Lassi
+            <input type="checkbox" name="kurkure" id="kurkure">Kurkure
+            <input type="checkbox" name="softdrink" id="softdrink">Softdrink
+
+        <br>
+        <br>
+        <label for="date">Choose date of program : </label>
+        <input type="date" name="date" id="date">
+
+        <br>
+        <br>
+
+        <label for="avenue">Select location : </label>
+        <select name="avenue" id="avenue">=
+        <option value="Victoria Memorial">Victoria Memorial</option>
+        <option value="Dakshineshwar">Dakshineshwar</option>
+        <option value="Park Street">Park Street</option>
+    </select>
+    <br>
+    <br>
+    <textarea name="textarea" id="textarea" cols="30" rows="10">enter additional comments >>></textarea>
+    </fieldset>
+
+    <br>
+    <input type="button" name="submit" id="submit" value="Submit">
+</fieldset>
+    </form>
+</body>
+</html>
