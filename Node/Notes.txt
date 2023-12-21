@@ -1,0 +1,5 @@
+npm init -> This will create a package.json file which has all the information and dependencies and sub dependencies list
+
+npm i express | npm i 'anything' -> This will create a node_modules folder which will have the required modules like express or anything and update the dependencies of the package.json file
+
+npm i -g express -> This will create the node_modules globally and update the dependencies of the package.json file
