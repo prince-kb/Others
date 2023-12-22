@@ -1,10 +1,16 @@
 console.log("Hello World!")
+//Importing by common JS module method
 const p = require('./index2')
+const p1 = require('./index3')
 const os = require('os')
 const path = require('path')
 const fs = require('fs')
-//Using required files
-// console.log(p)
+
+
+//Using common JS modules
+console.log(p.aalu)
+p.baigan()
+console.log(p1)
 
 /*
 console.log(os.totalmem())
@@ -27,7 +33,22 @@ const a2=path.dirname(__filename)
 console.log(a1)
 console.log(a2)
  */
-
-fs.readFile('Notes.txt','utf8',(err,data)=>{
+console.log("File opened")
+//Will read a file after almost all codes or if the file is ready after the I/O operation
+//Change to present directory to find the file
+fs.readFile('FaltuNotes.txt','utf8',(err,data)=>{
     console.log(err,data)
 })
+//This will read the file and store it so that it can be used again
+//But this will not print the string values
+const z = fs.readFileSync('FaltuNotes.txt')
+console.log(z)
+//To print the string values use toString() method
+console.log(z.toString())
+
+fs.writeFile('FaltuNotes.txt',"Written data1",()=>{
+    console.log("Written 1")
+})
+const y = fs.writeFileSync('FaltuNotes.txt',"Written data2")
+console.log(y)
+console.log("File closed and now normal readFile method will work")

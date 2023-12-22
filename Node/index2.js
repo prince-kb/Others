@@ -4,5 +4,10 @@ const aalu = {
     eatable : true,
     weight : 240
 }
+const baigan=()=>{
+    console.log("I am baigan")
+}
+module.exports.aalu = aalu;
+module.exports.baigan = baigan;
 
-module.exports = aalu;
+

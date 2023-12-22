@@ -3,3 +3,41 @@ npm init -> This will create a package.json file which has all the information a
 npm i express | npm i 'anything' -> This will create a node_modules folder which will have the required modules like express or anything and update the dependencies of the package.json file
 
 npm i -g express -> This will create the node_modules globally and update the dependencies of the package.json file
+
+Common js modules can import and export functions and data fields and the type attribute in package.json should not be module (as in case of use of ES6 module) -
+To export -
+module.exports.function_name1 = fn1
+module.exports.function_name2 = fn2
+
+To import use -
+const fn = require('./file')
+console.log(fn.fn1)
+//or
+fn.fn2()
+
+//ES6 module is more good to use and we can also define a default export function so that if {} is not used then a default function is reached
+//To use ES6 function export, .mjs file should be created instead of .js file
+To export -
+Normal function-
+export function(){
+
+}
+Default function -
+export default function(){
+
+}
+
+To import -
+Normal function-
+import {function_name1 , function_name2} from './file_location'
+or
+import {function_name1 as f} from './file_location'
+
+Defaullt function -
+import function_name from './file_location'
+
+//To import all of them use -
+import * as func from './jdkkf'
+
+To use -
+func.function_name1()
